@@ -1,0 +1,55 @@
+{
+  "name": "reactjs-fe-core",
+  "version": "1.0.0",
+  "description": "The core ui lib",
+  "author": "icc",
+  "license": "MIT",
+  "private": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js --env env=dev",
+    "build": "rm -rf dist/ && yarn build:esm && yarn build:cjs && cp ./src/index.less dist",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.8",
+    "antd": "^4.23.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.35.0",
+    "yup": "^0.32.11"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime": "^7.19.0",
+    "@tanstack/react-query": "^4.3.9",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0",
+    "webpack-merge": "^5.8.0"
+  }
+}

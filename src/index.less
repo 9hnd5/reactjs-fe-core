@@ -1,0 +1,24 @@
+@import "~antd/es/style/themes/default.less";
+@import "~antd/dist/antd.less"; // Import Ant Design styles by less entry
+@primary-color: #006d75;
+@border-radius-base: 4px;
+@select-item-selected-bg: @primary-color;
+@select-item-selected-color: #fff;
+@form-item-margin-bottom: 4px;
+
+//Table custom
+@table-header-bg: #fff;
+.ant-table-tbody > tr > td {
+  border-top: none !important;
+  border-bottom: 1px dashed #afafaf !important;
+}
+.ant-table-thead > tr > th {
+  border-top: none !important;
+  border-bottom: 1px dashed #afafaf !important;
+}
+.ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  content: none !important;
+}
+//
