@@ -67,7 +67,7 @@ const TGroup = <T extends FieldValues>(props: TCheckboxGroupProps<T>) => {
   });
 
   return (
-    <AntdCheckboxGroup {...field} {...restProps}>
+    <AntdCheckboxGroup {...restProps} {...field}>
       {children}
     </AntdCheckboxGroup>
   );

@@ -60,8 +60,8 @@ const TDatePicker = <T extends FieldValues>(props: TDatePickerProps<T>) => {
       value={transform.input(value)}
       style={{ width: "100%" }}
       format={format}
-      {...restFields}
       {...restProps}
+      {...restFields}
     />
   );
 };

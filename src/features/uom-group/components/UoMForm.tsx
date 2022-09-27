@@ -33,7 +33,10 @@ export type FormValue = {
 
 const UoMForm = React.forwardRef<{ onSubmit: () => void }, {}>(
   (props: any, ref: any) => {
-    const methods = useForm<FormValue>({ resolver: yupResolver(schema) });
+    const methods = useForm<FormValue>({
+      resolver: yupResolver(schema),
+      mode: "onBlur",
+    });
 
     React.useImperativeHandle(ref, () => ({
       onSubmit: methods.handleSubmit(handleSubmitForm),

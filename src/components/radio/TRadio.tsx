@@ -33,7 +33,7 @@ const TGroup = <T extends FieldValues>(props: TRadioGroupProps<T>) => {
   });
 
   return (
-    <RadioGroup {...field} {...restProps}>
+    <RadioGroup {...restProps} {...field}>
       {children}
     </RadioGroup>
   );

@@ -20,7 +20,7 @@ const TSwitch = <T extends FieldValues>(props: TSwitchProps<T>) => {
     shouldUnregister,
   });
   return (
-    <Switch checked={field.value} onChange={field.onChange} {...restProps} />
+    <Switch {...restProps} checked={field.value} onChange={field.onChange} />
   );
 };
 

@@ -31,7 +31,7 @@ const TSelect = <T extends FieldValues>(props: TSelectProps<T>) => {
     shouldUnregister,
   });
   return (
-    <Select {...field} {...restProps}>
+    <Select {...restProps} {...field}>
       {children}
     </Select>
   );

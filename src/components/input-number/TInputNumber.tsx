@@ -20,7 +20,7 @@ const TInputNumber = <T extends FieldValues>(props: TInputNumberProps<T>) => {
     shouldUnregister,
   });
 
-  return <InputNumber {...field} {...restProps} style={{ width: "100%" }} />;
+  return <InputNumber {...restProps} {...field} style={{ width: "100%" }} />;
 };
 
 export { TInputNumber };

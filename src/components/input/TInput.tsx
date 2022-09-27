@@ -21,7 +21,7 @@ const TInput = <T extends FieldValues>(props: TInputProps<T>) => {
     defaultValue,
     shouldUnregister,
   });
-  return <Input {...field} {...restProps} />;
+  return <Input {...restProps} {...field} />;
 };
 
 type DefaultPasswordProps = React.ComponentPropsWithoutRef<typeof Password>;
@@ -38,7 +38,7 @@ const TPassword = <T extends FieldValues>(props: TPasswordProps<T>) => {
     defaultValue,
     shouldUnregister,
   });
-  return <Input.Password {...field} {...restProps} />;
+  return <Input.Password {...restProps} {...field} />;
 };
 
 type DefaultTextAreaProps = React.ComponentPropsWithoutRef<typeof TextArea>;
@@ -55,7 +55,7 @@ const TTextArea = <T extends FieldValues>(props: TTextAreaProps<T>) => {
     defaultValue,
     shouldUnregister,
   });
-  return <TextArea {...field} {...restProps} />;
+  return <TextArea {...restProps} {...field} />;
 };
 
 type DefaultSearchProps = React.ComponentPropsWithoutRef<typeof Search>;
@@ -72,7 +72,7 @@ const TSearch = <T extends FieldValues>(props: TSearchProps<T>) => {
     defaultValue,
     shouldUnregister,
   });
-  return <Search {...field} {...restProps} />;
+  return <Search {...restProps} {...field} />;
 };
 
 TInput.TPassword = TPassword;
