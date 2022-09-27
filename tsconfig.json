@@ -20,6 +20,6 @@
     "incremental": true,
     "outDir": "dist/esm"
   },
-  // "include": ["src/assets/**/*", "src/components/**/*"]
-  "include": ["src/**/*"]
+  "include": ["src/assets/**/*", "src/components/**/*"]
+  // "include": ["src/**/*"]
 }
