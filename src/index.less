@@ -12,6 +12,9 @@
   border-top: none !important;
   border-bottom: 1px dashed #afafaf !important;
 }
+.ant-table-tbody > .ant-table-measure-row > td {
+  border: none !important;
+}
 .ant-table-thead > tr > th {
   border-top: none !important;
   border-bottom: 1px dashed #afafaf !important;
@@ -22,3 +25,23 @@
   content: none !important;
 }
 //
+
+//Move * after text
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+}
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: none;
+}
+//Remove ':'
+.ant-form-item-label > label::after {
+  content: none;
+}

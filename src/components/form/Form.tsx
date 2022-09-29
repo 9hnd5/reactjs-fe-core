@@ -25,18 +25,17 @@ const Item = (props: DefaultFormItemProps) => {
   } = props;
   return (
     <AntdForm.Item {...restProps} hasFeedback={hasFeedback}>
-      {hasFeedback ? (
+      {hasFeedback && help && (
         <AntdToolTip
           title={help}
           color={helpColor}
           placement={helpPosition}
           open={hasFeedback && help ? true : false}
         >
-          {children}
+          <div />
         </AntdToolTip>
-      ) : (
-        children
       )}
+      {children}
     </AntdForm.Item>
   );
 };

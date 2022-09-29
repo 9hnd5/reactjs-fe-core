@@ -35,7 +35,6 @@ const UoMForm = React.forwardRef<{ onSubmit: () => void }, {}>(
   (props: any, ref: any) => {
     const methods = useForm<FormValue>({
       resolver: yupResolver(schema),
-      mode: "onBlur",
     });
 
     React.useImperativeHandle(ref, () => ({
