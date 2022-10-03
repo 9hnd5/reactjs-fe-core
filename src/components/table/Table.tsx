@@ -1,3 +1,9 @@
 export { Table } from "antd";
 export type { TableProps } from "antd";
-export * from "antd/es/table";
+export type {
+  ColumnsType,
+  ColumnGroupType,
+  ColumnProps,
+  ColumnType,
+  TablePaginationConfig,
+} from "antd/es/table";
