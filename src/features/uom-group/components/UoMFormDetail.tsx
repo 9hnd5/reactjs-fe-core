@@ -172,6 +172,14 @@ export default function UoMFormDetail() {
       rowKey={(r) => r.id ?? 0}
       dataSource={dataSource}
       tableLayout="fixed"
+      pagination={{
+        showTotal: (total) => `Total ${total}`,
+        showSizeChanger: true,
+        showTitle: true,
+        showQuickJumper: true,
+        responsive: true,
+        simple: true
+      }}
     />
   );
 }
