@@ -21,6 +21,7 @@ export * from "./input-number/TInputNumber";
 export * from "./input-number/InputNumber";
 export * from "./select/TSelect";
 export * from "./select/Select";
+export * from "./switch/Switch";
 export * from "./switch/TSwitch";
 export * from "./list/List";
 export * from "./popover/Popover";
